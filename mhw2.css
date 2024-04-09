@@ -1,0 +1,513 @@
+body {
+    background-color: #05203c;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.body-flexbox {
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+main {
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #05203c;
+    padding: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.search-first-row-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-first-row-div > img {
+    height: 1.75rem;
+}
+
+.search-first-row-icons-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.search-first-row-icon-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.375rem;
+    border-radius: 0.5rem;
+}
+
+.search-first-row-icon-div:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.375rem;
+    background-color: #636970;
+    border-radius: 0.5rem;
+}
+
+.search-first-row-icon-div > img {
+    height: 1.75rem;
+}
+
+.search-second-row-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.search-second-row-button-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.375rem;
+    align-items: center;
+    border-radius: 6.25rem;
+    height: 2.25rem;
+    background-color: transparent;
+    color: #e0e4e9;
+    border: 2px solid #e0e4e9
+}
+
+.search-second-row-button-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.375rem;
+    align-items: center;
+    border-radius: 6.25rem;
+    height: 2.25rem;
+    background-color: transparent;
+    color: #e0e4e9;
+    border: 2px solid #e0e4e9;
+}
+
+.search-second-row-button-div:hover {
+    background-color: #2961db;
+    border: 2px solid #2961db;
+}
+
+.search-second-row-button-div span {
+    padding-right: 0.75rem;
+}
+
+.search-second-row-button-div img {
+    height: 2rem;
+}
+
+.search-third-row-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.375rem;
+}
+
+.search-third-row-div input{
+    height: 3rem;
+    border-radius: 0.75rem;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.search-third-row-inner-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.375rem;
+}
+
+.search-third-row-inner-div input {
+    flex-grow: 1;
+}
+
+.search-forth-row-div {
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+}
+
+.search-forth-row-div > button {
+    flex-grow: 1;
+    border-radius: 0.75rem;
+    color: #ffffff;
+    background-color: #2961db;
+    border: 2px solid #2961db;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.search-forth-row-div > button:hover {
+    background-color: #1f4da9;
+    border: 2px solid #1f4da9;
+}
+
+.CardsContainer {
+    padding: 0 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.LeftCardContainer {
+    padding: 0.25rem 0.25rem 0.25rem 1.5rem; /* Top | Right | Bottom | Left */
+
+    flex-grow: 1;
+}
+
+.RightCardContainer {
+    padding: 0.25rem 1.5rem 0.25rem 0.25rem; /* Top | Right | Bottom | Left */
+
+    flex-grow: 1;
+}
+
+.MiddleCardContainer {
+    padding: 0.25rem;
+
+    flex-grow: 1;
+}
+
+.Card {
+    color: #ffffff;
+    background-color: #05203c;
+    min-width: 6.75rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 #25201f4d;
+    height: 4.75rem;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.25s;
+    transition-delay: 0;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.Card:hover {
+    background-color: #0e2a58;
+    box-shadow: 0 4px 14px 0 #25201f40;
+}
+
+.CardIcon {
+    margin: -0.5rem 0rem 0rem -0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.main-image-div {
+    padding: 0rem 2rem; /* top and bottom | left and right */
+}
+
+.auxiliar-main-image-div {
+    position: relative;
+}
+
+.auxiliar-main-image-div > img {
+    position: relative;
+    z-index: 0;
+
+    width: 100%;
+
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 #25201f4d;
+
+    transition: box-shadow 0.25s ease;
+}
+
+.auxiliar-main-image-div:hover > img {
+    box-shadow: 0 4px 14px 0 #25201f40
+}
+
+.main-image-text-div {
+    position: absolute;
+    z-index: 1;
+
+    color: #ffffff;
+
+    top: 2.5rem;
+    left: 2.5rem;
+    width: 45%;
+}
+
+.main-image-text-div > button {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 2px solid #ffffff;
+
+    margin: 1rem 0 0;
+    padding: 0.375rem 1rem;
+
+    box-shadow: 0 1px 3px 0 #25201f4d;
+
+    transition: box-shadow 0.25s ease;
+}
+
+.main-image-text-div > button:hover {
+    box-shadow: 0 4px 14px 0 #25201f40
+}
+
+.frequently-asked-questions-div {
+    padding: 0 2rem;
+}
+
+.frequently-asked-questions-div > h3 {
+    margin: 0;
+    padding: 0 0 8px;
+    font-size: 24px;
+}
+
+.plan-your-adventure-div {
+    padding: 0 2rem;
+}
+
+.plan-your-adventure-div > h3 {
+    margin: 0;
+    padding: 0 0 1rem;
+    font-size: 24px;
+}
+
+.button-container-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.default-plan-button {
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px #c1c7cf;;
+    height: 2rem;
+    background-color: #ffffff;
+}
+
+
+.active-plan-button {
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    border: solid 1px #05203c;;
+    height: 2rem;
+    background-color: #05203c;
+    color: white;
+}
+
+.plan-container-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    padding: 1rem 0rem;
+}
+
+.plan-container-div-first-column {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.plan-container-div-first-column > a {
+    text-decoration: none;
+    color: #2961db;
+}
+
+.plan-container-div-second-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.plan-container-div-second-column > a {
+    text-decoration: none;
+    color: #2961db;
+}
+
+/* FOOTER */
+/* Regole di stile per gli elementi presenti all'interno del tag <footer> */
+
+footer {
+    background-color: #05203c;
+}
+
+.footer-flexbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    padding: 0rem 2rem; 
+}
+
+/* Local Settings */
+.local-settings-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.25rem 1.5rem;
+    border: 2px solid #ffffff;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+
+    color: white;
+}
+
+.local-settings-div > img {
+    height: 0.5rem;
+
+    border: 1px solid #e0e4e9;
+    margin-right: 0.5rem;
+}
+
+.local-settings-div > p {
+    margin: 0;
+}
+
+/* External Links */
+.external-links-div > a {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0.5rem 0rem;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.external-links-div > a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.copyright-div {
+    margin-bottom: 1.5rem;
+}
+
+.copyright-div > p {
+    margin: 0;
+}
+
+.copyright-div span {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+/* COLLAPSIBLE SECTION */
+
+/* Determina lo stile del bottone utilizzato per realizzare il collapsible. */
+.CollapsibleToggle {
+    background-color: #ffffff; /* Da rimuovere successivamente */
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding: 0;
+    height: 3.406rem;
+
+}
+
+/* Stili condivisi dai Collapsible contenuti in <main> e <footer> */
+
+.collapsible {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsible-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+.collapsible-toggle:hover {
+    cursor: pointer;
+}
+
+.collapsible-toggle-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.collapsible-toggle-text {
+    flex-grow: 1;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.collapsible-toggle-icon {
+    display: inherit;
+    align-items: center;
+}
+
+.collapsible-toggle-img {
+    height: 1rem;
+    width: 1rem;
+
+    /* Consultare MDN per vedere significato */
+    transition: transform 0.25s ease;
+}
+
+/* Stile specifico dei Collapsible contenuti nel <main> */
+
+.main-collapsible-div .collapsible {
+    border-bottom: 1px solid #636970;
+}
+
+/* Footer Collapsibles */
+/* Stile da applicare unicamente ai Collapsible contenuti nel <footer> */
+.footer-collapsible-div .collapsible-toggle {
+    color: #ffffff;
+}
+
+.footer-collapsible-div .collapsible-toggle-text > p {
+    padding: 0.5rem 0rem; /* top and bottom | left and right */
+    margin: 0rem;
+}
+
+.footer-collapsible-div .collapsible-content {
+    padding: 0rem 1.5rem; /* top and bottom | left and right */
+
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
+
+.collapsible-content {
+    transition: display 0.25s ease;
+}

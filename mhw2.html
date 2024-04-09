@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voli low cost: confronta e prenota biglietti aerei | Skyscanner</title>
+        <link rel="stylesheet" href="mhw2.css"/>
+        <script src="mhw2.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body-flexbox">
+
+            <!-- MAIN SECTION -->
+            <main>
+                <div class="search-div">
+                    <div class="search-first-row-div">
+                        <img src="icons/skyscanner_logo.svg" alt="">
+                        <div class="search-first-row-icons-div">
+                            <div class="search-first-row-icon-div">
+                                <img src="icons/heart.svg" alt="">
+                            </div>
+                            <div class="search-first-row-icon-div">
+                                <img src="icons/account.svg" alt="">
+                            </div>
+                            <div class="search-first-row-icon-div">
+                                <img src="icons/menu.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-second-row-div">
+                        <button class="search-second-row-button-div"><img src="icons/explore_everywhere.svg" alt="">
+                            <span>Voli</span>
+                        </button>
+                        <button class="search-second-row-button-div"><img src="icons/hotel.svg" alt="">
+                            <span>Hotel</span>
+                        </button>
+                        <button class="search-second-row-button-div"><img src="icons/car_rental.svg" alt="">
+                            <span>Noleggio auto</span>
+                        </button>
+                    </div>
+                    <div class="search-third-row-div">
+                        <input type="text" placeholder="    Catania Fontanarossa (CTA)">
+                        <input type="text" placeholder="    Rio de Janeiro (Qualsiasi)">
+                        <div class="search-third-row-inner-div">
+                            <input type="text" placeholder="    24 - 31 mar">
+                            <input type="text" placeholder="    1 Adulto">
+                        </div>
+                    </div>
+                    <div class="search-forth-row-div">
+                        <button><strong>Cerca</strong></button>
+                    </div>
+                </div>
+                <div class="CardsContainer">
+                    <div class="LeftCardContainer">
+                        <div class="Card">
+                            <img src="icons/explore_everywhere.svg" alt="" class="CardIcon">
+                            <strong><span>Cerca ovunque</span></strong>
+                        </div>
+                    </div>
+                    <div class="MiddleCardContainer">
+                        <div class="Card">
+                            <img src="icons/hotel.svg" alt="" class="CardIcon">
+                            <strong><span>Hotel</span></strong>
+                        </div>
+                    </div>
+                    <div class="RightCardContainer">
+                        <div class="Card">
+                            <img src="icons/car_rental.svg" alt="" class="CardIcon">
+                            <strong><span>Noleggio auto</span></strong>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Main Image -->
+                <div class="main-image-div">
+                    <div class="auxiliar-main-image-div">
+                        <div class="main-image-text-div">
+                            <h2>Aprile: dove fa caldo?</h2>
+                            <p><span>
+                                Fai le valigie e preparati a fare il pieno di vitamina D. Il nostro esperto di viaggi ti 
+                                consiglierà i posti più caldi da visitare ad aprile.
+                            </span></p>
+                            <button>
+                                Esplora subito
+                            </button>
+                        </div>
+                        <img src="images/sahara_desert_oasis.jpg" alt="oasi nel deserto del sahara">
+                    </div>
+                </div>
+
+                <div class="frequently-asked-questions-div">
+                    <h3>Prenota voli con Skyscanner</h3>
+                    <!-- Main Collapsibles -->
+                    <div class="main-collapsible-div">
+                        <!-- Collapsible (Come funziona Skyscanner?) -->
+                        <div class="collapsible">
+                            <button type="button" id="first-collapsible-toggle" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Come funziona Skyscanner?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden" data-visibility="hidden">
+                                <p><span>
+                                    Siamo un motore di ricerca di voli, noleggi auto e hotel. Esaminiamo tutte le
+                                    principali compagnie aeree e i fornitori di viaggi in rete, in modo che tu possa 
+                                    confrontare le tariffe aeree e gli altri costi di viaggio in un unico posto. Una 
+                                    volta trovato il volo, il noleggio auto o l'hotel migliore, puoi prenotare 
+                                    direttamente con il fornitore.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Come posso trovare il migliore volo low cost con Skyscanner?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Come posso trovare il migliore volo low cost con Skyscanner?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>                             
+                                    Trovare voli su Skyscanner è facile: ogni mese, oltre 100 milioni di viaggiatori 
+                                    esperti cercano biglietti aerei, hotel e noleggi auto economici sulla nostra 
+                                    piattaforma. Ecco alcuni semplici consigli per ottenere il massimo dalla ricerca di 
+                                    voli.
+                                </span></p>
+                                <p><span>
+                                    <strong>Risparmia tepo e denaro.</strong> Che si tratti del volo più veloce o del 
+                                    soggiorno più vantaggioso, puoi scegliere il tuo fornitore di biglietti aerei o il 
+                                    tuo hotel preferito in base alle valutazioni di viaggiatori reali e prenotare 
+                                    immediatamente.
+                                </span></p>
+                                <p><span>
+                                    <strong>Cerca in tutto il mondo con l'opzione Ovunque.</strong> Hai voglia di fare 
+                                    un viaggio, a prescindere dalla destinazione? O vuoi solo scoprire un luogo nuovo? 
+                                    Cerca "<strong>Ovunque</strong>" per scovare il migliore volo low cost in qualsiasi 
+                                    momento.
+                                </span></p>
+                                <p><span>
+                                    <strong>Trova il periodo più conveniente per prendere un volo.</strong> Se hai una 
+                                    destinazione in mente e vuoi trovare il migliore volo low cost, scegli l'opzione 
+                                    "<strong>Mese più economico</strong>" quando effettui la ricerca per trovare il 
+                                    giorno in cui i biglietti aerei costano meno.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Per quale destinazione dovrei prenotare un volo in questo momento?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Per quale destinazione dovrei prenotare un volo in questo momento?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Se desideri qualche idea per il tuo prossimo viaggio, cerca Ovunque per trovare un 
+                                    biglietto aereo economico per qualsiasi destinazione.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Posso prenotare il mio volo su Skyscanner?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Posso prenotare il mio volo su Skyscanner?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Siamo un motore di ricerca, quindi dopo aver trovato il biglietto aereo migliore con 
+                                    noi, passerai al sito web della compagnia aerea o del fornitore di viaggi per 
+                                    completare la prenotazione. Ciò ti darà l'opportunità di aggiungere tutte le 
+                                    informazioni sulla fidelizzazione che desideri e di selezionare le tue opzioni di 
+                                    volo preferite, come ad esempio i posti a sedere.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Su skyscanner si possono prenotare anche gli hotel?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Su skyscanner si possono prenotare anche gli hotel?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Sì! Puoi trovare l'hotel perfetto ovunque con lo stesso potente motore di ricerca 
+                                    che usi per cercare i voli.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (E i noleggi auto?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            E i noleggi auto?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Puoi anche utilizzare Skyscanner per cercare e confrontare noleggi auto economici in 
+                                    pochi secondi, quindi ritirare il veicolo in aeroporto non appena atterri.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Cos'è un avviso di prezzo?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Cos'è un avviso di prezzo?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>            
+                                    Se imposti un avviso di prezzo, monitoreremo il prezzo dei biglietti aerei per te e 
+                                    ti faremo sapere se sale o scende via e-mail o tramite notifica push sull'app.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Posso prenotare un biglietto aereo flessibile?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Posso prenotare un biglietto aereo flessibile?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Comprendiamo quanto sia importante avere piani flessibili per le vacanze. A volte, 
+                                    alcune compagnie aeree offrono biglietti aerei modificabili a un costo aggiuntivo, 
+                                    quindi cerca questa opzione quando prenoti. Inoltre, puoi cercare hotel e noleggi 
+                                    auto che propongono la cancellazione gratuita, così puoi effettuare subito la 
+                                    prenotazione e modificarla o persino annullarla in un secondo momento se non puoi 
+                                    più viaggiare.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Posso prenotare voli che emettono meno CO2?) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>
+                                            Posso prenotare voli che emettono meno CO<sub>2</sub>?
+                                        </span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_black.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Sì. Da quando abbiamo iniziato a mostrare le emissioni di CO<sub>2</sub> dei voli 
+                                    (quando questa informazione è disponibile), oltre 100 milioni di viaggiatori hanno 
+                                    acquistato un biglietto aereo per un volo con emissioni ridotte per la rotta 
+                                    selezionata.
+                                </span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-your-adventure-div">
+                    <h3>Inizia a pianificare la tua avventura</h3>
+                    <div class="button-container-div">
+                        <button data-section="città" class="active-plan-button">Città</button>
+                        <button data-section="regione" class="default-plan-button">Regione</button>
+                        <button data-section="paese" class="default-plan-button">Paese</button>
+                        <button data-section="aeroporto" class="default-plan-button">Aeroporto</button>
+                    </div>
+                    <div class="plan-container-div">
+                        <div class="plan-container-div-first-column">
+                            <a href="">Voli di andata e ritorno per Londra</a>
+                            <a href="">Voli low cost per Los Angeles</a>
+                            <a href="">Voli per Parigi</a>
+                        </div>
+                        <div class="plan-container-div-second-column">
+                            <a href="">Voli di andata e ritorno per Abu Dhabi</a>
+                            <a href="">Biglietti aerei di andata e ritorno per Seul</a>
+                            <a href="">Voli low cost per Venezia</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- FOOTER SECTION -->
+            <footer>
+                <div class="footer-flexbox">
+                    <!-- Local Settings -->
+                    <div class="local-settings-div"> 
+                        <img src="images/italian_flag.png" class="local-settings-img">
+                        <p><span> 
+                            Italia · Italiano · €EUR 
+                        </span></p>
+                    </div>
+                    <!-- External Links -->
+                    <div class="external-links-div">
+                        <a href="">Help</a>
+                        <a href="">Impostazioni privacy</a>
+                        <a href="">Accedi</a>
+                        <a href="">Informativa su cookie</a>
+                        <a href="">Informativa sulla privacy</a>
+                        <a href="">Termini di servizio</a>
+                        <a href="">Informazioni sull'azienda</a>
+                    </div>
+                    <!-- Footer Collapsibles -->
+                    <div class="footer-collapsible-div">
+                        <!-- Collapsible (Esplora) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle" data-icon="white">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>Esplora</span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_white.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Società) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle" data-icon="white">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>Società</span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_white.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Partner) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle" data-icon="white">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>Partner</span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_white.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Viaggi) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle" data-icon="white">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>Viaggi</span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_white.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span></p>
+                            </div>
+                        </div>
+                        <!-- Collapsible (Siti internazionali) -->
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-toggle" data-icon="white">
+                                <div class="collapsible-toggle-flexbox">
+                                    <div class="collapsible-toggle-text">
+                                        <p><span>Siti internazionali</span></p>
+                                    </div>
+                                    <div class="collapsible-toggle-icon">
+                                        <img src="icons/expand_white.svg" alt="espandi" class="collapsible-toggle-img">
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="collapsible-content hidden"  data-visibility="hidden">
+                                <p><span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copyright -->
+                    <div class="copyright-div">
+                        <p><span>
+                            Confronta e prenota voli low cost da qualsiasi luogo ovunque tu vada <br>
+                            © Skyscanner Ltd 2002-2024
+                        </span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
